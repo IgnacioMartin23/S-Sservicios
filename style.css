@@ -422,18 +422,15 @@ html {
   }
 
 
-/*  
+  
 .navbar {
-  background: #000;
+  background: #0077b6;
   padding: 10px;
   text-align: center;
 }
 
-.navbar .logo {
-  color: #fff;
-  margin-right: 20px;
-}
-*/
+
+
 .navbar button {
   display: none;
   background: none;
