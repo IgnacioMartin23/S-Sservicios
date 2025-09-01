@@ -262,7 +262,7 @@ footer {
 .footer-column a:hover {
   text-decoration: underline;
   color: #eae9e0;
-  /* color dorado al pasar el mouse */
+  
 }
 
 .footer-column i:hover {
@@ -419,3 +419,20 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
   }
+
+
+  
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
