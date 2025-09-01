@@ -54,6 +54,7 @@ nav a:hover {
 
 */
 /* ===== NAVBAR ===== */
+
 .navbar {
   background: #0077b6;
   
@@ -74,7 +75,7 @@ nav a:hover {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
+/*
 .navbar .nav-links {
   list-style: none;
   display: flex;
@@ -95,7 +96,7 @@ nav a:hover {
 .navbar .nav-links li a:hover {
   color: #00bcd4;
   
-}
+}*/
 
 
 /* Hero con imagen de barco */
@@ -421,18 +422,52 @@ html {
   }
 
 
-  
+/*  
+.navbar {
+  background: #000;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar .logo {
+  color: #fff;
+  margin-right: 20px;
+}
+*/
+.navbar button {
+  display: none;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  gap: 15px;
 }
 
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
 
+/* En pantallas chicas, ocultar menú y mostrar botón */
 @media (max-width: 768px) {
   .nav-links {
+    display: none;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .navbar button {
+    display: inline-block;
   }
 }
